@@ -26,6 +26,7 @@ body {
   font-weight: var(--font-normal);
   line-height: 1.5;
   margin: 0;
+  text-align: center;
 }
 
 h3 {
@@ -38,7 +39,7 @@ h3 {
 
 img,
 svg {
-  max-width: 100%;
+  width: 100%;
   vertical-align: middle;
 }
 
@@ -49,6 +50,23 @@ svg {
   align-items: center;
   height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+
+.pattern-top {
+  position: absolute;
+  top: -40%;
+  left: -80%;
+  width: 31.25rem;
+  z-index: 100;
+}
+
+.pattern-bottom {
+  position: absolute;
+  bottom: -40%;
+  right: -70%;
+  width: 31.25rem;
+  z-index: 100;
 }
 
 /* Card */
@@ -60,4 +78,5 @@ svg {
   align-items: center;
   height: 23.5rem;
   width: 20.4375rem;
+  z-index: 200;
 }
