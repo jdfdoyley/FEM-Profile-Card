@@ -8,48 +8,41 @@
   <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 <body>
-  <div class="wrapper">
-    <div class="pattern-top">
-      <img src="/dist/img/bg-pattern-top.svg" alt="Top background pattern">
-    </div>
-
-    <!-- Card Header -->
-    <div class="card">
+  <section class="card-wrapper">
+    <article class="card">
       <header class="card-header">
-        <img src="/dist/img/bg-pattern-card.svg" alt="A picture of bubble patterns">
+        <div class="card-image"></div>
       </header>
+      <main class="card-body">
+        <div class="card-author">
+          <img src="/dist/img/image-victor.jpg" alt="Author avatar photo" class="author-avatar">
 
-      <!-- Card Body -->
-      <section class="card-body">
-        <div class="profile-pic">
-          <img src="/dist/img/image-victor.jpg" alt="A profile picture of Victor">
+          <div class="author-name-age">
+            <p class="author-name">Victor Crest</p>
+            <span>26</span>
+          </div>
+          <p class="author-country">London</p>
         </div>
-        <div>
-          <h3>Victor Crest <span class="name">26</span></h3>
-          <p>London</p>
-        </div>
-      </section>
-
-      <!-- Card Footer -->
+      </main>
       <footer class="card-footer">
-        <div>
-          <p class="count">80K</p>
-          <p>Followers</p>
-        </div>
-        <div>
-          <p class="count">803K</p>
-          <p>Likes</p>
-        </div>
-        <div>
-          <p class="count">1.4K</p>
-          <p>Photos</p>
+        <div class="card-stats">
+          <div class="stat">
+            <p class="value">80k</p>
+            <p class="type">Followers</p>
+          </div>
+
+          <div class="stat">
+            <p class="value">803k</p>
+            <p class="type">Likes</p>
+          </div>
+
+          <div class="stat">
+            <p class="value">1.4k</p>
+            <p class="type">Photos</p>
+          </div>
         </div>
       </footer>
-    </div>
-
-    <div class="pattern-bottom">
-      <img src="/dist/img/bg-pattern-bottom.svg" alt="Bottom background pattern">
-    </div>
-  </div>
+    </article>
+  </section>
 </body>
 </html>

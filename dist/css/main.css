@@ -26,7 +26,6 @@ body {
   font-weight: var(--font-normal);
   line-height: 1.5;
   margin: 0;
-  text-align: center;
 }
 
 h3 {
@@ -39,44 +38,5 @@ h3 {
 
 img,
 svg {
-  width: 100%;
   vertical-align: middle;
-}
-
-.wrapper {
-  background-color: var(--dark-cyan);
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.pattern-top {
-  position: absolute;
-  top: -40%;
-  left: -80%;
-  width: 31.25rem;
-  z-index: 100;
-}
-
-.pattern-bottom {
-  position: absolute;
-  bottom: -40%;
-  right: -70%;
-  width: 31.25rem;
-  z-index: 100;
-}
-
-/* Card */
-.card {
-  background-color: #fff;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 23.5rem;
-  width: 20.4375rem;
-  z-index: 200;
 }
