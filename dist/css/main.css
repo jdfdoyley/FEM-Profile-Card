@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
 
 /* CSS Variables */
 :root {
@@ -7,6 +7,7 @@
   --very-dark-blue: hsl(229, 23%, 23%);
   --dark-grayish-blue: hsl(227, 10%, 46%);
   --dark-gray: hsl(0, 0%, 59%);
+  --font-light: 300;
   --font-normal: 400;
   --font-bold: 700;
 }
@@ -26,6 +27,7 @@ body {
   font-weight: var(--font-normal);
   line-height: 1.5;
   margin: 0;
+  text-align: center;
 }
 
 h3 {
@@ -34,11 +36,6 @@ h3 {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem;
-}
-
-img,
-svg {
-  vertical-align: middle;
 }
 
 /* Card Wrapper */
@@ -77,4 +74,39 @@ svg {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   height: 8.875rem;
+}
+
+/* Card Body */
+.card-body {
+  height: 9.0625rem;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-body .author-avatar {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: block;
+
+  position: absolute;
+  top: -40%;
+  left: 8%;
+}
+
+.card-body .card-author {
+  margin-top: 4rem;
+}
+
+.author-info .author-name {
+  color: var(--very-dark-blue);
+  font-weight: var(--font-bold);
+  padding-right: 10px;
+}
+
+.author-info .author-country {
+  font-size: 0.875rem;
+  font-weight: var(--font-normal);
+  margin-top: 0;
 }
