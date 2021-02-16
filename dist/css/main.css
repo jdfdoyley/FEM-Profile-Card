@@ -41,6 +41,7 @@ svg {
   vertical-align: middle;
 }
 
+/* Card Wrapper */
 .card-wrapper {
   background-color: var(--dark-cyan);
 
@@ -50,6 +51,7 @@ svg {
   height: 100vh;
 }
 
+/* Card */
 .card {
   display: flex;
   flex-direction: column;
@@ -60,4 +62,19 @@ svg {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   height: 23.5625rem;
   width: 20.4375rem;
+}
+
+/* Card Header */
+.card-header {
+  width: 100%;
+}
+
+.card-header .card-image {
+  background-color: var(--dark-cyan);
+  background: url(/dist/img/bg-pattern-card.svg);
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 8.875rem;
 }
